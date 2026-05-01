@@ -12,7 +12,7 @@
 
 <div align="center" style="margin-bottom:16px;">
   <a href="https://t.me/xirraen">
-    <img src="https://img.shields.io/badge/Telegram-@xiraen-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a1a" alt="Telegram"/>
+    <img src="https://img.shields.io/badge/Telegram-@xirraen-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a1a" alt="Telegram"/>
   </a>
   <a href="https://twitter.com/xirraen">
     <img src="https://img.shields.io/badge/Twitter-@xirraen-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1a1a1a" alt="Twitter"/>
