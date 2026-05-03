@@ -1,0 +1,13 @@
+# Sensitive
+.env
+*.token
+config.py
+
+# Cache
+pycache/
+*.pyc
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
