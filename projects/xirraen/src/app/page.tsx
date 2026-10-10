@@ -32,6 +32,16 @@ const projects = [
   },
 ];
 
+const ecosystemNetworks = [
+  { name: "Ethereum", icon: "ethereum.svg" },
+  { name: "Optimism", icon: "optimism.svg" },
+  { name: "Arbitrum", icon: "arbitrum-one.svg" },
+  { name: "Base", icon: "base.svg" },
+  { name: "Gnosis", icon: "gnosis.svg" },
+  { name: "Polygon", icon: "polygon.svg" },
+  { name: "Avalanche", icon: "avalanche.svg" },
+];
+
 export default function Home() {
   return (
     <main className="page-shell" id="top">
@@ -105,12 +115,17 @@ export default function Home() {
           <section className="empty-tile ecosystem-tile" aria-labelledby="ecosystem-heading">
             <div className="tile-heading">
               <div><span className="tile-kicker">02 / EXPLORATION</span><h2 id="ecosystem-heading">Ekosistem</h2></div>
-              <span className="tile-index">01</span>
+              <span className="tile-index">07</span>
             </div>
-            <div className="empty-state">
-              <span className="empty-symbol" aria-hidden="true">⌁</span>
-              <div><strong>Belum ada daftar publik</strong><p>Proyek yang ingin ditampilkan bisa ditambahkan setelah dipilih.</p></div>
-            </div>
+            <p className="ecosystem-caption">Jaringan EVM yang tercakup dalam data wallet</p>
+            <ul className="ecosystem-networks" aria-label="Tujuh jaringan EVM yang dipantau">
+              {ecosystemNetworks.map((network) => (
+                <li className="ecosystem-network" key={network.name}>
+                  <Image src={`/chain-icons/${network.icon}`} alt="" width={18} height={18} />
+                  <span>{network.name}</span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <ActivityCard />
